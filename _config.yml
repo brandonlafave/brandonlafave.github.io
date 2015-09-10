@@ -14,4 +14,4 @@ github_username:  brandonlafave
 paginate: 7
 
 # Build settings
-markdown: rdiscount
+markdown: redcarpet
