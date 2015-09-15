@@ -13,5 +13,7 @@ github_username:  brandonlafave
 # Pagination
 paginate: 7
 
+highlighter: rouge
+
 # Build settings
 markdown: redcarpet
