@@ -148,57 +148,75 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+/*----- Fonts -----*/
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?47x0lw');
+    src:url('../fonts/icomoon.eot?#iefix47x0lw') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?47x0lw') format('truetype'),
+        url('../fonts/icomoon.woff?47x0lw') format('woff'),
+        url('../fonts/icomoon.svg?47x0lw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home:before {
+    content: "\e600";
+}
+.icon-pencil2:before {
+    content: "\e601";
+}
+.icon-profile:before {
+    content: "\e602";
+}
+.icon-bubbles:before {
+    content: "\e603";
+}
+.icon-lab:before {
+    content: "\e604";
+}
+.icon-circle-up:before {
+    content: "\e605";
+}
+.icon-circle-right:before {
+    content: "\e606";
+}
+.icon-circle-down:before {
+    content: "\e607";
+}
+.icon-circle-left:before {
+    content: "\e608";
+}
+.icon-twitter:before {
+    content: "\e609";
+}
+.icon-github:before {
+    content: "\e60a";
+}
+.icon-linkedin:before {
+    content: "\e60b";
+}
 
+/*----- Base Styles -----*/
+button {
+    display: block;
+}
 
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+span {
+    font-size: 125%;
+    padding-bottom: .20em;
 }

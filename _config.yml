@@ -10,6 +10,12 @@ url: "http://brandonlafave.com" # the base hostname & protocol for your site
 twitter_username: BrandonLaFave
 github_username:  brandonlafave
 
+permalink:     '/blog/:year/:title/'
+paginate_path: '/blog/page:num/'
+
+include: ['_pages']
+relative_permalinks: false
+
 # Pagination
 paginate: 7
 
