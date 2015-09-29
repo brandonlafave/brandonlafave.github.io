@@ -12,11 +12,14 @@
   padding-bottom: 1em
 }
 
-/* Test */
-main {
-// display: flex;
-min-height: 70vh;
-// flex-direction: column;
+.layout-main {
+flex: 1;
+}
+
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
 }
 
 .layout-main {
@@ -32,6 +35,18 @@ flex: 1;
 header a:link, a:hover, a:visited {
   text-decoration: none;
   color: black;
+}
+
+body {
+  background-color: #42CCC8;
+}
+
+html {
+  background: -webkit-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #00c6ff 10%, #0072ff 90%); /* W3C */
 }
 
 .center {
