@@ -1,34 +1,50 @@
+/*==========================
+        MODULE STYLES
+==========================*/
+
+/*----- Form Modules -----*/
 .contact-form {
   width: 100%;
-
 }
 
-/*
-@media screen (min-width: 600px) {
+.contact-form__input {
   width: 50%;
-}
-
-*/
-
-.contact-form input {
-  display: block;
+  padding: 1em;
   margin-bottom: .5em;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact-form__button {
-  border-radius: .25em;
-  border: 1px solid black;
-  padding: 0 0;
+  padding: 1em;
+  width: 50%;
+  margin-bottom: .5em;
+}
+
+/*----- Utility Modules -----*/
+
+.center-element {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: .5em;
+}
+
+.rounded-corners {
+  border-radius: .25em;
+  border: .1em solid gray;
+  // padding: 0 .25em;
+}
+
+.center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .social-media__button {
 
 }
+
+/*----- Flexbox Styles -----*/
 
 .Site {
   display: flex;

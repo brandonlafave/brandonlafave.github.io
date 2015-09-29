@@ -1,3 +1,7 @@
+/*==========================
+          CSS RESET
+==========================*/
+
 /**
  * Reset some basic elements
  */
@@ -211,8 +215,24 @@ pre {
     content: "\e60b";
 }
 
+/*==========================
+        BASE STYLES
+==========================*/
 /*----- Base Styles -----*/
 button {
+    display: block;
+}
+
+button:hover {
+    background: -webkit-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* IE10 */
+  background:      -o-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* W3C */
+    color: white;
+}
+
+input {
     display: block;
 }
 
@@ -223,6 +243,8 @@ span {
 
 header {
     // background-color: #00CED1;
+    // background-color: #00c6ff;
+    background-color: #fe8c00;
 }
 
 
