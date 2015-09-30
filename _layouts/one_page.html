@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="wrapper">
+
+    {% include header.html %}
+
+    <div class="page-content layout-main">
+      <div class="wrapper">
+        <!-- {{ content }} -->
+
+        <section class="hero">
+          <h1 class="center">Hello. My name is Brandon.</h1>
+          <!-- {% include contact-form.html %} -->
+        </section>
+
+        <section>
+          <h1 class="center">About</h1>
+          {% include contact-form.html %}
+        </section>
+
+        <section>
+          <h1 class="center">Resume</h1>
+          {% include contact-form.html %}
+        </section>
+
+        <section>
+          <h1 class="center">Portfolio</h1>
+          {% include contact-form.html %}
+        </section>
+
+        <section>
+          <h1 class="center">Blog</h1>
+          {% include contact-form.html %}
+        </section>
+
+        <section>
+          <h1 class="center">Contact</h1>
+          {% include contact-form.html %}
+        </section>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

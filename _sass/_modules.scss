@@ -2,13 +2,18 @@
         MODULE STYLES
 ==========================*/
 
+/*----- Hero Modules -----*/
+.hero {
+  height: 100vh;
+}
+
 /*----- Form Modules -----*/
 .contact-form {
   width: 100%;
 }
 
 .contact-form__input {
-  width: 50%;
+  width: 100%;
   padding: 1em;
   margin-bottom: .5em;
 }
