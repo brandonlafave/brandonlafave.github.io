@@ -4,7 +4,12 @@
 
 /*----- Hero Modules -----*/
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+    background: -webkit-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* IE10 */
+    background:      -o-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* Opera 11.10+ */
+    background:         linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* W3C */
 }
 
 /*----- Form Modules -----*/
@@ -16,13 +21,43 @@
   width: 100%;
   padding: 1em;
   margin-bottom: .5em;
+  // @include media($mobile) {
+  //   padding: 1em 0em;
+  // }
 }
 
+.contact-form__textarea {
+  @extend .contact-form__input;
+  height: 10.75em;
+  // @include media($mobile) {
+  //   padding: 1em 0em;
+  // }
+}
+
+section {
+    // padding: 1em 2em;
+  //     @include media($mobile) {
+  //   padding: 0em;
+  // }
+}
 .contact-form__button {
   padding: 1em;
   width: 50%;
   margin-bottom: .5em;
 }
+
+/*----- Border Modules -----*/
+// .border--top {
+//   border-top: 1px solid gray;
+//   padding-top: 1em;
+//   padding-bottom: 1em
+// }
+
+// .border--bottom {
+//   border-bottom: 1px solid gray;
+//   padding-top: 1em;
+//   padding-bottom: 1em;
+// }
 
 /*----- Utility Modules -----*/
 
@@ -45,18 +80,23 @@
   position: fixed;
 }
 
-.social-media__button {
-
+.padding-top {
+  padding-top: .75em;
 }
+
+// .social-media__button {
+
+// }
 
 /*----- Flexbox Styles -----*/
 
-.Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
+// .Site {
+//   display: flex;
+//   min-height: 100vh;
+//   flex-direction: column;
+// }
 
-.Site-content {
-  flex: 1;
-}
+// .Site-content {
+//   flex: 1;
+// }
+

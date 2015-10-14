@@ -1,49 +1,61 @@
+<!--
+Built with HTML5, Sass, and Jekyll.
+
+Copyright 2015 Brandon LaFave
+-->
+
 <!DOCTYPE html>
 <html>
 
   {% include head.html %}
-
   <body class="wrapper">
 
     {% include header.html %}
 
-    <div class="page-content layout-main">
-      <div class="wrapper">
-        <!-- {{ content }} -->
+    <main class="grid-container">
+      <section id="hero" class="hero one-column">
+        <h1>Hello. My name is Brandon</h1>
+      </section>
 
-        <section class="hero">
-          <h1 class="center">Hello. My name is Brandon.</h1>
-          <!-- {% include contact-form.html %} -->
-        </section>
+      <section id="about" class="one-column">
+        <h2 class="center">About</h2>
+        <div class="two-columns">
+          <p>Mixtape cray quinoa, dreamcatcher Carles flexitarian keffiyeh post-ironic food truck salvia you probably haven't heard of them. XOXO iPhone hella, tote bag salvia irony crucifix semiotics Vice farm-to-table freegan bitters. Truffaut locavore tofu, PBR&B quinoa fap McSweeney's. Roof party ethical 3 wolf moon PBR, Marfa migas yr put a bird on it meh Williamsburg blog semiotics. Typewriter sartorial locavore cornhole. Viral meh literally, PBR&B squid normcore stumptown pork belly kogi. Ugh raw denim typewriter XOXO organic, whatever pork belly kitsch pour-over narwhal meditation bicycle rights cold-pressed flannel.</p>
+        </div>
 
-        <section>
-          <h1 class="center">About</h1>
-          {% include contact-form.html %}
-        </section>
+        <div class="two-columns">
+          <p>90's authentic bitters Helvetica fixie. You probably haven't heard of them pickled semiotics lomo pug meditation. Mumblecore stumptown selfies chillwave, Truffaut next level Blue Bottle banjo fingerstache. Paleo Austin Thundercats, gentrify cray leggings mlkshk shabby chic bitters cornhole gluten-free keffiyeh mixtape post-ironic. Kale chips disrupt farm-to-table master cleanse Etsy direct trade stumptown. DIY cardigan next level Neutra. Raw denim twee cliche stumptown, asymmetrical lomo kogi cornhole.</p>
+        </div>
+      </section>
 
-        <section>
-          <h1 class="center">Resume</h1>
-          {% include contact-form.html %}
-        </section>
+      <section id="resume" class="one-column">
+        <h2 class="center">Resume</h2>
+        <p></p>
+      </section>
 
-        <section>
-          <h1 class="center">Portfolio</h1>
-          {% include contact-form.html %}
-        </section>
+      <section id="portfolio" class="one-column">
+        <h2 class="center">Portfolio</h2>
+        <p></p>
+      </section>
 
-        <section>
-          <h1 class="center">Blog</h1>
-          {% include contact-form.html %}
-        </section>
+      <section id="blog" class="one-column">
+        <h2 class="center">Blog</h2>
+        <p></p>
+      </section>
 
-        <section>
-          <h1 class="center">Contact</h1>
-          {% include contact-form.html %}
-        </section>
-      </div>
-    </div>
+      <section id="contact" class="one-column">
+        <h2 class="center">Contact</h2>
+        {% include contact-form.html %}
+      </section>
+    </main>
 
-    {% include footer.html %}
+    <footer class="flex-container flex-center">
+      <section class="flex-space-between">
+        <a href="https://github.com/brandonlafave" target="_blank"><span class="icon-github"></span></a>
+        <a href="https://www.linkedin.com/in/brandonlafave" target="_blank"><span class="icon-linkedin"></span></a>
+        <a href="https://twitter.com/BrandonLaFave" target="_blank"><span class="icon-twitter"></span></a>
+      </section>
+    </footer>
 
   </body>
 

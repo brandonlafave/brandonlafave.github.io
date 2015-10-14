@@ -3,153 +3,63 @@
 ==========================*/
 
 /*----- Grid System -----*/
-
-// Mixins, not worth having its own file.
-// Border box
-// Should probably use auto-prefix on this.
-@mixin box-sizing($type) {
-  -webkit-box-sizing: $type;
-     -moz-box-sizing: $type;
-          box-sizing: $type;
+$mobile: new-breakpoint(max-width 500px 4);
+.grid-container {
+  @include outer-container;
 }
 
-// Start the grid.
-// Optional hard reset
-* {
-    margin: 0;
-    padding: 0;
-    @include box-sizing(border-box);
+.one-column {
+  @include span-columns(12);
+  @include omega();
 }
 
-// clearfix
-.frame {
-    margin: 0 auto;
-    max-width: $frame-width;
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+.two-columns {
+  @include span-columns(6 of 12);
+  @include media($mobile) {
+  @include span-columns(4);
+  }
 }
 
-// Attribute selector
-// Also I've removed :last-of-type
-[class*='bit-'] {
-    float: left;
-    padding: $bit-padding;
-}
-
-// Create grid widths (1-12)
-@for $i from $start through $end {
-    .bit-#{$i} {
-        width: $full / $i;
-    }
-}
-
-// Common widths
-// Please use the media queries below to respond these widths
-// Feel free to pull request new widths
-@each $i in $common {
-    .bit-#{$i} {
-        width: percentage($i / 100);
-    }
-}
-
-
-// Responsiveness
-// Feel free to use your own responsive widths and styles for the grid
-// These are mostly for example use only.
-// -------------------------------------------------------------------
-
-// Mobile
-@media (max-width: $small) {
-    @for $i from $start through $end {
-        .bit-#{$i} {
-            width: $full
-        }
-    }
-}
-
-// Portrait Tablet
-@media (min-width: $small) and (max-width: $medium) {
-    .bit-4,
-    .bit-6,
-    .bit-8,
-    .bit-10,
-    .bit-12 {
-        width: $half;
-    }
-
-    .bit-1,
-    .bit-2,
-    .bit-3,
-    .bit-5,
-    .bit-7,
-    .bit-9,
-    .bit-11 {
-        width: $full;
-    }
-}
-
-// Landscape Tablet
-@media (min-width: $medium) and (max-width: $large) {
-    .bit-2,
-    .bit-7 {
-        width: $full;
-    }
-
-    .bit-4,
-    .bit-8,
-    .bit-10,
-    .bit-12 {
-        width: $half;
-    }
-}
-
-/*----- Layout Styles -----*/
-.container {
+.flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
-.container2 {
-  display: flex;
-  flex-direction: row;
+.flex-center {
   justify-content: center;
 }
 
-.container2 a {
-  padding: 0em .5em;
-  font-size: 125%;
+.flex-end {
+  justify-content: flex-end;
 }
 
-.border--top {
-  border-top: 1px solid gray;
-  padding-top: 1em;
-  padding-bottom: 1em
+.flex-space-between {
+  justify-content: space-between;
 }
 
-.layout-main {
-flex: 1;
+#contact {
+   // @include span-columns(4 of 12);
+   // background: white;
 }
 
-.layout-main {
-flex: 1;
-}
+/*----- Layout Styles -----*/
+// .container {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+// }
 
-.border--bottom {
-  border-bottom: 1px solid gray;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
+// .container2 {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+// }
 
-.padding-top {
-  padding-top: .75em;
-}
+// .container2 a {
+//   padding: 0em .5em;
+//   font-size: 125%;
+// }
 
-.wrapper {
-  max-width: 700px;
-  margin: 0 auto;
-  // background-color: #f9f7f4;
-}
+// .layout-main {
+// flex: 1;
+// }
