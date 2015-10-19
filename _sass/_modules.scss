@@ -1,41 +1,93 @@
+/*==========================
+        MODULE STYLES
+==========================*/
+
+/*----- Hero Modules -----*/
+
+
+/*----- Form Modules -----*/
+
 .contact-form {
   width: 100%;
-
 }
 
-/*
-@media screen (min-width: 600px) {
-  width: 50%;
-}
-
-*/
-
-.contact-form input {
-  display: block;
+.contact-form__input {
+  width: 100%;
+  padding: 1em;
   margin-bottom: .5em;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.contact-form__textarea {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: .5em;
+  height: 10.75em;
 }
 
 .contact-form__button {
-  border-radius: .25em;
-  border: 1px solid black;
-  padding: 0 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1em;
+  width: 50%;
   margin-bottom: .5em;
 }
 
-.social-media__button {
+/*----- Navigation Modules  -----*/
 
+.navigation--header {
+  float: right;
+  text-align: justify;
 }
 
-.Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+.navigation--header li {
+  list-style-type: none; //Combine with navigation--footer li
+  display: inline-block; //Combine with navigation--footer li
+  padding: .5em 1em;
+  border:1px solid transparent;
 }
 
-.Site-content {
-  flex: 1;
+.navigation--footer {
+  margin-right: auto; //Replace with center-element
+  margin-left: auto; //Replace with center-element
+  text-align: center; //Replace with center-text
+}
+
+.navigation--footer li {
+  list-style-type: none; //Combine with navigation--header li
+  display: inline-block; //Combiine with navigation--header li
+}
+
+.navigation--header li:hover, .navigation--footer li:hover {
+  border: 1px solid gray;
+}
+
+.logo {
+  float: left;
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+
+.navigation::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/*----- Utility Modules -----*/
+
+.center-text {
+  text-align: center;
+}
+
+.center-element {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin-left: auto; //Remove and add to center-element
+  margin-right: auto; //Remove and add to center-element
+}
+
+.clearfix {
+  clear: both;
 }

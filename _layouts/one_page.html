@@ -1,0 +1,61 @@
+<!--
+Built with HTML5, Sass, and Jekyll.
+
+Copyright 2015 Brandon LaFave
+-->
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  <body>
+
+    {% include header.html %}
+
+    <main class="wrapper">
+      <section>
+        <h2 class="center-text"><span>About</span></h2>
+        <a id="portfolio"></a>
+        <p>I'm a front-end developer who lives in Seattle. While working at Amazon, I was involved in several major launches, such as the opening of Kindle store in Netherlands and the release of Kindle Text Creator. I also initiated, created, and defined the media-query standards that Kindle teams throughout the world use for eBooks.</p>
+      </section>
+
+      <section>
+        <h2 class="center-text"><span>Portfolio</span></h2>
+        <section>
+          <h3>Bibliopile</h3>
+          <p><img src="images/bibliopile.jpg" alt=""></img></p>
+          <p>Bibliopile allows users to search and borrow books from their friends' libraries. I completed it with three other developers under a four-day sprint. I used semantic HTML5, Sass, AJAX, JavaScript, and Angular. <a href="bibliopile">[More Info]</a></p>
+        </section>
+
+        <section>
+          <h3>Kindle Textbook Creator</h3>
+          <p><img src="images/ktc.jpg" alt=""></img></p>
+          <a id="blog"></a>
+          <p>Kindle Textbook Creator is a free application for authors and educators to convert PDFs of textbooks, course notes, study guides, and other educational material into interactive Kindle books. I ensured quality assurance on the beta builds, provided UX feedback, and wrote the user guide. <a href="kindle-textbook-creator">[More Info]</a></p>
+        </section>
+      </section>
+
+      <section>
+        <h2 class="center-text"><span>Blog</span></h2>
+        <a id="contact"></a>
+        <p class="center-text">Coming soon.</p>
+      </section>
+
+      <section>
+        <h2 class="center-text"><span>Contact</span></h2>
+        <p></p>
+        <form class="contact-form">
+          <input class="contact-form__input" type="text" placeholder="Name *">
+          <input class="contact-form__input" type="email" placeholder="Email *">
+          <textarea class="contact-form__textarea" placeholder="Comment *" spellcheck="true"></textarea>
+          <button class="contact-form__button center-element">Submit</button>
+        </form>
+      </section>
+
+    </main>
+
+   {% include footer.html %}
+
+  </body>
+
+</html>
