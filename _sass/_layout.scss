@@ -3,4 +3,16 @@
 ==========================*/
 
 /*----- Grid System -----*/
+.column--left {
+  float: left;
+  display: block;
+  width: 50%;
+  padding: 1em;
+}
 
+.column--right {
+  width: 50%;
+  display: block;
+  float: right;
+  padding: 1em;
+}

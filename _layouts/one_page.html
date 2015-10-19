@@ -8,45 +8,50 @@ Copyright 2015 Brandon LaFave
 <html>
 
   {% include head.html %}
-  <body class="wrapper">
+  <body>
 
     {% include header.html %}
 
-    <main class="grid-container">
-      <section id="hero" class="hero one-column">
-        <h1>Hello. My name is Brandon</h1>
+    <main class="wrapper">
+      <section>
+        <h2 class="center-text"><span>About</span></h2>
+        <a id="portfolio"></a>
+        <p>I'm a front-end developer who lives in Seattle. While working at Amazon, I was involved in several major launches, such as the opening of Kindle store in Netherlands and the release of Kindle Text Creator. I also initiated, created, and defined the media-query standards that Kindle teams throughout the world use for eBooks.</p>
       </section>
 
-      <section id="about" class="one-column">
-        <h2 class="center">About</h2>
-        <div class="two-columns">
-          <p>Mixtape cray quinoa, dreamcatcher Carles flexitarian keffiyeh post-ironic food truck salvia you probably haven't heard of them. XOXO iPhone hella, tote bag salvia irony crucifix semiotics Vice farm-to-table freegan bitters. Truffaut locavore tofu, PBR&B quinoa fap McSweeney's. Roof party ethical 3 wolf moon PBR, Marfa migas yr put a bird on it meh Williamsburg blog semiotics. Typewriter sartorial locavore cornhole. Viral meh literally, PBR&B squid normcore stumptown pork belly kogi. Ugh raw denim typewriter XOXO organic, whatever pork belly kitsch pour-over narwhal meditation bicycle rights cold-pressed flannel.</p>
-        </div>
+      <section>
+        <h2 class="center-text"><span>Portfolio</span></h2>
+        <section>
+          <h3>Bibliopile</h3>
+          <p><img src="images/bibliopile.jpg" alt=""></img></p>
+          <p>Bibliopile allows users to search and borrow books from their friends' libraries. I completed it with three other developers under a four-day sprint. I used semantic HTML5, Sass, AJAX, JavaScript, and Angular. <a href="bibliopile">[More Info]</a></p>
+        </section>
 
-        <div class="two-columns">
-          <p>90's authentic bitters Helvetica fixie. You probably haven't heard of them pickled semiotics lomo pug meditation. Mumblecore stumptown selfies chillwave, Truffaut next level Blue Bottle banjo fingerstache. Paleo Austin Thundercats, gentrify cray leggings mlkshk shabby chic bitters cornhole gluten-free keffiyeh mixtape post-ironic. Kale chips disrupt farm-to-table master cleanse Etsy direct trade stumptown. DIY cardigan next level Neutra. Raw denim twee cliche stumptown, asymmetrical lomo kogi cornhole.</p>
-        </div>
+        <section>
+          <h3>Kindle Textbook Creator</h3>
+          <p><img src="images/ktc.jpg" alt=""></img></p>
+          <a id="blog"></a>
+          <p>Kindle Textbook Creator is a free application for authors and educators to convert PDFs of textbooks, course notes, study guides, and other educational material into interactive Kindle books. I ensured quality assurance on the beta builds, provided UX feedback, and wrote the user guide. <a href="kindle-textbook-creator">[More Info]</a></p>
+        </section>
       </section>
 
-      <section id="resume" class="one-column">
-        <h2 class="center">Resume</h2>
+      <section>
+        <h2 class="center-text"><span>Blog</span></h2>
+        <a id="contact"></a>
+        <p class="center-text">Coming soon.</p>
+      </section>
+
+      <section>
+        <h2 class="center-text"><span>Contact</span></h2>
         <p></p>
+        <form class="contact-form">
+          <input class="contact-form__input" type="text" placeholder="Name *">
+          <input class="contact-form__input" type="email" placeholder="Email *">
+          <textarea class="contact-form__textarea" placeholder="Comment *" spellcheck="true"></textarea>
+          <button class="contact-form__button center-element">Submit</button>
+        </form>
       </section>
 
-      <section id="portfolio" class="one-column">
-        <h2 class="center">Portfolio</h2>
-        <p></p>
-      </section>
-
-      <section id="blog" class="one-column">
-        <h2 class="center">Blog</h2>
-        <p></p>
-      </section>
-
-      <section id="contact" class="one-column">
-        <h2 class="center">Contact</h2>
-        {% include contact-form.html %}
-      </section>
     </main>
 
    {% include footer.html %}

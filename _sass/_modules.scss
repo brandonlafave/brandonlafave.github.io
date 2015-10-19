@@ -3,16 +3,10 @@
 ==========================*/
 
 /*----- Hero Modules -----*/
-.hero {
-  min-height: 100vh;
-    background: -webkit-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* IE10 */
-    background:      -o-linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* Opera 11.10+ */
-    background:         linear-gradient(180deg, #00c6ff 10%, #0072ff 90%); /* W3C */
-}
+
 
 /*----- Form Modules -----*/
+
 .contact-form {
   width: 100%;
 }
@@ -21,82 +15,79 @@
   width: 100%;
   padding: 1em;
   margin-bottom: .5em;
-  // @include media($mobile) {
-  //   padding: 1em 0em;
-  // }
 }
 
 .contact-form__textarea {
-  @extend .contact-form__input;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: .5em;
   height: 10.75em;
-  // @include media($mobile) {
-  //   padding: 1em 0em;
-  // }
 }
 
-section {
-    // padding: 1em 2em;
-  //     @include media($mobile) {
-  //   padding: 0em;
-  // }
-}
 .contact-form__button {
   padding: 1em;
   width: 50%;
   margin-bottom: .5em;
 }
 
-/*----- Border Modules -----*/
-// .border--top {
-//   border-top: 1px solid gray;
-//   padding-top: 1em;
-//   padding-bottom: 1em
-// }
+/*----- Navigation Modules  -----*/
 
-// .border--bottom {
-//   border-bottom: 1px solid gray;
-//   padding-top: 1em;
-//   padding-bottom: 1em;
-// }
+.navigation--header {
+  float: right;
+  text-align: justify;
+}
+
+.navigation--header li {
+  list-style-type: none; //Combine with navigation--footer li
+  display: inline-block; //Combine with navigation--footer li
+  padding: .5em 1em;
+  border:1px solid transparent;
+}
+
+.navigation--footer {
+  margin-right: auto; //Replace with center-element
+  margin-left: auto; //Replace with center-element
+  text-align: center; //Replace with center-text
+}
+
+.navigation--footer li {
+  list-style-type: none; //Combine with navigation--header li
+  display: inline-block; //Combiine with navigation--header li
+}
+
+.navigation--header li:hover, .navigation--footer li:hover {
+  border: 1px solid gray;
+}
+
+.logo {
+  float: left;
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+
+.navigation::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
 
 /*----- Utility Modules -----*/
+
+.center-text {
+  text-align: center;
+}
 
 .center-element {
   margin-left: auto;
   margin-right: auto;
 }
 
-.rounded-corners {
-  border-radius: .25em;
-  border: .1em solid gray;
-  // padding: 0 .25em;
+.wrapper {
+  max-width: 960px;
+  margin-left: auto; //Remove and add to center-element
+  margin-right: auto; //Remove and add to center-element
 }
 
-.center {
-  text-align: center;
+.clearfix {
+  clear: both;
 }
-
-.fixed {
-  position: fixed;
-}
-
-.padding-top {
-  padding-top: .75em;
-}
-
-// .social-media__button {
-
-// }
-
-/*----- Flexbox Styles -----*/
-
-// .Site {
-//   display: flex;
-//   min-height: 100vh;
-//   flex-direction: column;
-// }
-
-// .Site-content {
-//   flex: 1;
-// }
-
