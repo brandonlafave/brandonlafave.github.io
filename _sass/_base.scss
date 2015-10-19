@@ -218,99 +218,94 @@ pre {
 /*==========================
         BASE STYLES
 ==========================*/
+
 /*----- Base Styles -----*/
 
 h2 {
-        border-bottom: 1px solid #ddd;
-        line-height: 0;
-        padding: 0;
-        margin-top: 3em;
-        margin-bottom: 2em;
-        color: gray;
-      }
+  border-bottom: 1px solid #ddd;
+  line-height: 0;
+  padding: 0;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  color: gray;
+}
 
-      h2 span {
-        background: #fff;
-        padding: 0 15px;
-        text-transform: uppercase;
-        font-size: 80%;
-      }
+h2 span {
+  background: #fff;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 80%;
+}
 
-      p, form {
-        max-width: 500px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: justify;
-      }
+p, form {
+  max-width: 500px;
+  margin-right: auto; //Combine with center-element
+  margin-left: auto; //Combine with center-element
+  text-align: justify; //Create text-justify utility?
+}
 
-      h3 {
-        max-width: 500px;
-        color: gray;
-        margin-left: auto;
-        margin-right: auto;
-      }
+h3 {
+  max-width: 500px;
+  color: gray;
+  margin-left: auto; //Combine with center-element
+  margin-right: auto; //Combine with center-element
+}
 
-      img {
-        max-width: 500px;
-      }
+img {
+  max-width: 500px;
+}
 
-      html {
-        box-sizing: border-box;
-      }
+html {
+  box-sizing: border-box;
+}
 
-      *, *:before, *:after {
-        box-sizing: inherit;
-      }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-      body {
-        padding: 0;
-        margin: 0;
-      }
+body {
+  padding: 0;
+  margin: 0;
+}
 
-      main {
-        /*height: 100vh;*/
-        margin-top: 8em;
-        margin-bottom: 5em;
-        /*margin-bottom: 1.3em;*/
-        position: relative;
-      }
+main {
+  margin-top: 8em;
+  margin-bottom: 5em;
+  position: relative;
+}
 
 
-      article, aside, details, figcaption, figure,
-      footer, header, hgroup, menu, nav, section {
-        display: block;
-      }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, button, section {
+  display: block;
+}
 
-      button {
-        display: block;
-      }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+  z-index: 1;
+}
 
-      header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
-        z-index: 1;
-      }
+ul {
+  padding: 0;
+  margin-right: 2em;
+}
 
-      ul {
-        padding: 0;
-        margin-right: 2em;
-      }
+ul a {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 80%;
+}
 
-      ul a {
-        text-decoration: none;
-        color: gray;
-        text-transform: uppercase;
-        font-size: 80%;
-      }
+input, textarea {
+  display: block;
+  margin-bottom: .5em;
+}
 
-      input, textarea {
-        display: block;
-        margin-bottom: .5em;
-      }
-
-      p {
-        line-height: 1.5;
-      }
+p {
+  line-height: 1.5;
+}
