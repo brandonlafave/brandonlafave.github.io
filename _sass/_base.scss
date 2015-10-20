@@ -152,7 +152,12 @@ pre {
     }
 }
 
-/*----- Fonts -----*/
+
+/*==========================
+        FONTS
+==========================*/
+@import url(https://fonts.googleapis.com/css?family=Marck+Script);
+
 @font-face {
     font-family: 'icomoon';
     src:url('../fonts/icomoon.eot?47x0lw');
@@ -219,8 +224,6 @@ pre {
         BASE STYLES
 ==========================*/
 
-/*----- Base Styles -----*/
-
 h2 {
   border-bottom: 1px solid #ddd;
   line-height: 0;
@@ -239,16 +242,12 @@ h2 span {
 
 p, form {
   max-width: 500px;
-  margin-right: auto; //Combine with center-element
-  margin-left: auto; //Combine with center-element
   text-align: justify; //Create text-justify utility?
 }
 
 h3 {
   max-width: 500px;
   color: gray;
-  margin-left: auto; //Combine with center-element
-  margin-right: auto; //Combine with center-element
 }
 
 img {
@@ -292,14 +291,12 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  // background-color: #fff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
   z-index: 1;
 }
 
 footer {
   border-top: 1px solid #e2e2e2;
-  // background-color: #fff;
 }
 
 ul {
@@ -340,14 +337,13 @@ p {
 }
 
 @media (min-width: 500px) {
-
   h3 {
     padding-left: 0em;
     padding-right: 0em;
   }
 
   p {
-    padding-left: 0em; //Delete during refactor
-    padding-right: 0em; //Delete during refactor
+    padding-left: 0em;
+    padding-right: 0em;
   }
 }
