@@ -9,6 +9,14 @@
 
 .contact-form {
   width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media (min-width: 500px) {
+  .contact-form {
+    padding: 0;
+  }
 }
 
 .contact-form__input {
@@ -26,43 +34,84 @@
 
 .contact-form__button {
   padding: 1em;
-  width: 50%;
+  width: 100%;
   margin-bottom: .5em;
 }
 
 /*----- Navigation Modules  -----*/
 
 .navigation--header {
-  float: right;
-  text-align: justify;
+  float: none;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .navigation--header {
+    float: right;
+    text-align: justify;
+  }
 }
 
 .navigation--header li {
   list-style-type: none; //Combine with navigation--footer li
   display: inline-block; //Combine with navigation--footer li
   padding: .5em 1em;
-  border:1px solid transparent;
+  margin-top: .75em;
+  border: 1px solid transparent;
 }
+
+@media (min-width: 500px) {
+  .navigation--header li {
+    list-style-type: none; //Combine with navigation--footer li
+    display: inline-block; //Combine with navigation--footer li
+    padding: .5em 1em;
+    margin-top: .75em;
+    border: 1px solid transparent;
+  }
+}
+
 
 .navigation--footer {
   margin-right: auto; //Replace with center-element
   margin-left: auto; //Replace with center-element
   text-align: center; //Replace with center-text
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.navigation--footer span {
+  font-size: 150%;
+  padding-left: .25em;
+  padding-right: .25em;
 }
 
 .navigation--footer li {
   list-style-type: none; //Combine with navigation--header li
   display: inline-block; //Combiine with navigation--header li
+  color: gray !important;
 }
 
 .navigation--header li:hover, .navigation--footer li:hover {
   border: 1px solid gray;
+  text-decoration: none;
+}
+
+.navigation--header a:hover, .navigation--footer a:hover {
+  text-decoration: none;
 }
 
 .logo {
-  float: left;
-  margin-top: 1.5em;
-  margin-left: 1em;
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .logo {
+    display: block;
+    float: left;
+    margin-top: .75em;
+    margin-left: 1em;
+    color: gray;
+  }
 }
 
 .navigation::after {

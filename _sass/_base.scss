@@ -268,6 +268,10 @@ body {
   margin: 0;
 }
 
+body, h2 span {
+  background-color: #fafafa;
+}
+
 main {
   margin-top: 8em;
   margin-bottom: 5em;
@@ -280,13 +284,22 @@ footer, header, hgroup, menu, nav, button, section {
   display: block;
 }
 
+header, footer {
+  background-color: #fff;
+}
+
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  // background-color: #fff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
   z-index: 1;
+}
+
+footer {
+  border-top: 1px solid #e2e2e2;
+  // background-color: #fff;
 }
 
 ul {
@@ -294,11 +307,20 @@ ul {
   margin-right: 2em;
 }
 
-ul a {
+ul a,  {
   text-decoration: none;
   color: gray;
   text-transform: uppercase;
   font-size: 80%;
+}
+
+a:visted, a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+button:hover {
+  background: #fe8c00;
 }
 
 input, textarea {
@@ -306,6 +328,26 @@ input, textarea {
   margin-bottom: .5em;
 }
 
+h3 {
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+}
+
 p {
+  padding-left: 2em;
+  padding-right: 2em;
   line-height: 1.5;
+}
+
+@media (min-width: 500px) {
+
+  h3 {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  p {
+    padding-left: 0em; //Delete during refactor
+    padding-right: 0em; //Delete during refactor
+  }
 }
