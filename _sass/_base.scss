@@ -240,6 +240,10 @@ h2 span {
   font-size: 80%;
 }
 
+a span {
+  color: gray;
+}
+
 p, form {
   max-width: 500px;
   text-align: justify; //Create text-justify utility?
