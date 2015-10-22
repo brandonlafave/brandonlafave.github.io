@@ -240,6 +240,10 @@ h2 span {
   font-size: 80%;
 }
 
+a span {
+  color: gray;
+}
+
 p, form {
   max-width: 500px;
   text-align: justify; //Create text-justify utility?
@@ -251,7 +255,7 @@ h3 {
 }
 
 img {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 html {
@@ -276,7 +280,6 @@ main {
   margin-bottom: 5em;
   position: relative;
 }
-
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, button, section {
@@ -311,7 +314,7 @@ ul a,  {
   font-size: 80%;
 }
 
-a:visted, a:hover {
+a:visited, a:hover {
   text-decoration: none;
   color: gray;
 }

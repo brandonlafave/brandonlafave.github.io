@@ -70,11 +70,7 @@
   }
 }
 
-
 .navigation--footer {
-  margin-right: auto; //Replace with center-element
-  margin-left: auto; //Replace with center-element
-  text-align: center; //Replace with center-text
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -93,7 +89,6 @@
 
 .navigation--header li:hover, .navigation--footer li:hover {
   border: 1px solid gray;
-  text-decoration: none;
 }
 
 .navigation--header a:hover, .navigation--footer a:hover {
@@ -121,6 +116,15 @@
   width: 100%;
 }
 
+/*----- Anchor Modules -----*/
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -6em;
+  visibility: hidden;
+}
+
 /*----- Utility Modules -----*/
 
 .center-text {
@@ -134,10 +138,12 @@
 
 .wrapper {
   max-width: 960px;
-  margin-left: auto; //Remove and add to center-element
-  margin-right: auto; //Remove and add to center-element
 }
 
 .clearfix {
   clear: both;
+}
+
+.p-padding--bottom{
+  padding-bottom: 1em;
 }
