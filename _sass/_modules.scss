@@ -122,6 +122,7 @@
 }
 
 /*----- Anchor Modules -----*/
+
 .anchor {
   display: block;
   position: relative;
@@ -142,10 +143,12 @@
 
 .wrapper {
   max-width: 960px;
-  margin-left: auto; //Remove and add to center-element
-  margin-right: auto; //Remove and add to center-element
 }
 
 .clearfix {
   clear: both;
+}
+
+.p-padding--bottom{
+  padding-bottom: 1em;
 }
