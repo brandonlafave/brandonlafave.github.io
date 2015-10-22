@@ -281,7 +281,6 @@ main {
   position: relative;
 }
 
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, button, section {
   display: block;
@@ -315,7 +314,7 @@ ul a,  {
   font-size: 80%;
 }
 
-a:visted, a:hover {
+a:visited, a:hover {
   text-decoration: none;
   color: gray;
 }
