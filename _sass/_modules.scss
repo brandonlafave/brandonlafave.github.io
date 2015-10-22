@@ -55,7 +55,7 @@
 .navigation--header li {
   list-style-type: none; //Combine with navigation--footer li
   display: inline-block; //Combine with navigation--footer li
-  padding: .5em 1em;
+  padding: .5em .15em;
   margin-top: .75em;
   border: 1px solid transparent;
 }
@@ -64,9 +64,9 @@
   .navigation--header li {
     list-style-type: none; //Combine with navigation--footer li
     display: inline-block; //Combine with navigation--footer li
-    padding: .5em 1em;
-    margin-top: .75em;
-    border: 1px solid transparent;
+    padding: .5em .5em;
+    // margin-top: .75em;
+    // border: 1px solid transparent;
   }
 }
 
