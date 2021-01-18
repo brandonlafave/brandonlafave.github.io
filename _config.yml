@@ -22,4 +22,4 @@ paginate: 7
 highlighter: rouge
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
